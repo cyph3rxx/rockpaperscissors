@@ -1,0 +1,35 @@
+from random import choice
+def dumb():
+	print("")
+	print("Thanks for playing, Bye bye !!! \U001f600")
+def game():
+	print("")
+	print("Welcome to the game mate, make your choice")
+	print("")
+	usr=input("You      : ")
+	comp=choice(["stone","paper","scissors"])
+	print(f"Computer : {comp}")
+	if usr==comp:
+		print("Nobody wins")
+	elif comp=="stone" and usr=="scissors":
+		print("You lose")
+	elif comp=="paper" and usr=="stone":
+		print("You lose")
+	elif comp=="scissors" and usr=="paper":
+		print("You lose")
+	elif comp=="stone" and usr=="paper":
+		print("You win !"+"\U0001f600")
+	elif comp=="paper" and usr=="scissors":
+		print("You win ! \U0001f600")
+	elif comp=="scissors" and usr=="stone":
+		print("You win ! \U0001f600")
+	else:
+		print("Wrong input")
+	print("Wanna play again?")
+	print("")
+	kap=input()
+	if kap=="yes":
+		game()
+	else:
+		dumb()
+game()
