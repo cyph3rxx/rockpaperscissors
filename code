@@ -1,7 +1,7 @@
 from random import choice
 def dumb():
 	print("")
-	print("Thanks for playing, Bye bye !!! \U001f600")
+	print("Thanks for playing, Bye bye !!! \n")
 def game():
 	print("")
 	print("Welcome to the game mate, make your choice")
@@ -18,11 +18,11 @@ def game():
 	elif comp=="scissors" and usr=="paper":
 		print("You lose")
 	elif comp=="stone" and usr=="paper":
-		print("You win !"+"\U0001f600")
+		print("You win !"+"\n")
 	elif comp=="paper" and usr=="scissors":
-		print("You win ! \U0001f600")
+		print("You win ! \n")
 	elif comp=="scissors" and usr=="stone":
-		print("You win ! \U0001f600")
+		print("You win ! \n")
 	else:
 		print("Wrong input")
 	print("Wanna play again?")
