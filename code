@@ -5,6 +5,7 @@ def dumb():
 def game():
 	print("")
 	print("Welcome to the game mate, make your choice")
+	print("Stone, Paper or Scissors ?")
 	print("")
 	usr=input("You      : ")
 	comp=choice(["stone","paper","scissors"])
@@ -25,10 +26,8 @@ def game():
 		print("You win ! \n")
 	else:
 		print("Wrong input")
-	print("Wanna play again?")
-	print("")
-	kap=input()
-	if kap=="yes":
+	kap=input("Wanna play again?\n")
+	if kap=="yes" or kap=="y":
 		game()
 	else:
 		dumb()
